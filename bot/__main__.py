@@ -42,7 +42,7 @@ def stats(update, context):
             f'<b>├  💽 DISK : {disk}%</b>\n' \
             f'<b>│</b>\n' \
             f'<b>╰──「 🚸 @MSPmoviesOffl 🚸 」</b>'
-    update.effective_message.reply_photo(IMAGE_URL, stats, parse_mode=ParseMode.HTML)
+    sendMessage(stats, context.bot, update)
 
 
 @run_async
